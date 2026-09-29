@@ -87,17 +87,17 @@
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .header .mobile-menu-btn {
     display: none;
   }
-}
+} */
 
 .mobile-menu-list {
   margin-bottom: auto;
 }
 .mobile-menu-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 .mobile-menu-link {
   font-weight: 700;
