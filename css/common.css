@@ -61,17 +61,40 @@ address {
   color: #2e2f42;
 }
 
+@media only screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header .logo {
+    margin-right: 76px;
+  }
+}
+
 .accent {
   color: #4d5ae5;
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 16px;
+}
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .btn {
@@ -112,7 +135,13 @@ address {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .section-title {

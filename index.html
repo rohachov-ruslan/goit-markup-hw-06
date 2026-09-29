@@ -25,6 +25,11 @@
         <a class="logo" href="./index.html"
           ><span class="accent">Web</span>Studio</a
         >
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-item">
@@ -126,10 +131,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-1.jpg"
+                srcset="./images/team-1.png 1x, ./images/team-1@2x.png 2x"
+                src="./images/team-1.png"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-content-wrapper">
                 <h3 class="team-caption">Mark Guerrero</h3>
@@ -189,10 +196,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-2.jpg"
+                srcset="./images/team-2.png 1x, ./images/team-2@2x.png 2x"
+                src="./images/team-2.png"
                 alt="Tom Ford"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-content-wrapper">
                 <h3 class="team-caption">Tom Ford</h3>
@@ -252,10 +261,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-3.jpg"
+                srcset="./images/team-3.png 1x, ./images/team-3@2x.png 2x"
+                src="./images/team-3.png"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-content-wrapper">
                 <h3 class="team-caption">Camila Garcia</h3>
@@ -315,10 +326,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-4.jpg"
+                srcset="./images/team-4.png 1x, ./images/team-4@2x.png 2x"
+                src="./images/team-4.png"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-content-wrapper">
                 <h3 class="team-caption">Daniel Wilson</h3>
@@ -378,7 +391,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -386,10 +399,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.png    1x,
+                    ./images/portfolio@2x-1.png 2x
+                  "
+                  src="./images/portfolio-1.png"
                   alt="Banking App"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -406,10 +424,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
+                  srcset="
+                    ./images/portfolio-2.png    1x,
+                    ./images/portfolio@2x-2.png 2x
+                  "
                   src="./images/portfolio-2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -426,10 +449,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
+                  srcset="
+                    ./images/portfolio-3.png    1x,
+                    ./images/portfolio@2x-3.png 2x
+                  "
                   src="./images/portfolio-3.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -446,10 +474,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
+                  srcset="
+                    ./images/portfolio-4.png    1x,
+                    ./images/portfolio@2x-4.png 2x
+                  "
                   src="./images/portfolio-4.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -466,10 +499,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
+                  srcset="
+                    ./images/portfolio-5.png    1x,
+                    ./images/portfolio@2x-5.png 2x
+                  "
                   src="./images/portfolio-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -486,10 +524,15 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-ill"
+                  srcset="
+                    ./images/portfolio-6.png    1x,
+                    ./images/portfolio@2x-6.png 2x
+                  "
                   src="./images/portfolio-6.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -595,8 +638,94 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-btn">
+          <svg class="mobile-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link active" href="#">Features</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Team</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Portfolio</a>
+          </li>
+        </ul>
 
-    <div id="modal" class="backdrop">
+        <div class="mobile-menu-bottom">
+          <ul class="contacts-list mobile-menu-contacts-list">
+            <li class="contacts-item">
+              <a
+                class="contacts-link mobile-menu-contacts-link active"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-socials mobile-menu-socials">
+            <li class="footer-socials-item">
+              <a
+                class="footer-socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                class="footer-socials-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                class="footer-socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                class="footer-socials-link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop" id="modal">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Close modal button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -676,15 +805,17 @@
                   <use href="./images/icons.svg#check-mark" />
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a
-                class="modal-form-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy Policy</a
-              >
+              <span>
+                I accept the terms and conditions of the
+                <a
+                  class="modal-form-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
 

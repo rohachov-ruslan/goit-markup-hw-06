@@ -1,10 +1,28 @@
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
 }
 
 .footer-wrapper {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .footer-content-wrapper {
@@ -22,6 +40,8 @@
 }
 
 .footer-socials-wrapper {
+  text-align: center;
+
   /* display: flex; */
 }
 
@@ -43,6 +63,9 @@
 }
 
 .footer-socials-item {
+  /* От растягивания */
+  /* flex-shrink: 0; */
+
   border-radius: 20px;
   width: 40px;
   height: 40px;
@@ -75,6 +98,8 @@
 }
 
 .footer-subscribe-caption {
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -86,7 +111,14 @@
 
 .footer-form {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 .footer-form-input {
@@ -132,7 +164,4 @@
 .btn-footer:hover,
 .btn-footer:focus {
   background-color: #31d0aa;
-}
-
-.footer-subscribe-icon {
 }
