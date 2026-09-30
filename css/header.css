@@ -3,17 +3,17 @@
   border-bottom: 1px solid #e7e9fc;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .header {
     padding: 0 16px;
   }
-}
+} */
 
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .header {
     padding: 0 15px;
   }
-}
+} */
 
 .header .container {
   display: flex;
@@ -76,7 +76,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 @media only screen and (min-width: 768px) {
