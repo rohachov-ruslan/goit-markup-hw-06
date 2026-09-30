@@ -17,8 +17,8 @@
       rgba(46, 47, 66, 0.7) 100%
     ),
     image-set(
-      "../images/hero/hero-bg_mob.jpg" 1x,
-      "../images/hero/hero-bg_mob@2x.jpg" 2x
+      url("../images/hero/hero-bg_mob.jpg") 1x,
+      url("../images/hero/hero-bg_mob@2x.jpg") 2x
     );
 }
 
@@ -35,7 +35,7 @@
 }
 
 .hero-title {
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto 72px;
 
   font-weight: 700;
@@ -48,6 +48,8 @@
 
 @media only screen and (min-width: 768px) {
   .hero-title {
+    max-width: 496px;
+
     font-size: 56px;
     line-height: 1.07;
     margin: 0 auto 36px;
