@@ -28,9 +28,8 @@
 }
 
 .team-item {
-  width: 264;
+  width: 264px;
 
-  width: calc((100% - 24px * 3) / 4);
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -40,6 +39,12 @@
 
   /* Проблема со съезжанием текста*/
   min-width: 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
 }
 
 .team-ill {
