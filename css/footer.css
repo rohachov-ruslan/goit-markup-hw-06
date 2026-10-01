@@ -37,6 +37,7 @@
   .footer-container {
     /* Проблема с переносом подписки */
     /* column-gap: 120px; */
+    column-gap: 0;
 
     max-width: 1158px;
     padding-left: 15px;
