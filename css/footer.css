@@ -35,7 +35,8 @@
 
 @media only screen and (min-width: 1158px) {
   .footer-container {
-    column-gap: 120px;
+    /* Проблема с переносом подписки */
+    /* column-gap: 120px; */
 
     max-width: 1158px;
     padding-left: 15px;
@@ -77,13 +78,20 @@
 
 .footer-socials-wrapper {
   text-align: center;
-
-  /* display: flex; */
 }
 
 @media only screen and (min-width: 768px) {
   .footer-socials-wrapper {
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-socials-wrapper {
+    text-align: left;
+
+    /* Проблема с переносом подписки */
+    margin-left: 120px;
   }
 }
 
@@ -210,7 +218,7 @@
 
 /* @media only screen and (min-width: 1158px) {
   .footer-form-input {
-    width: 256px;
+    width: 264px;
   }
 } */
 
